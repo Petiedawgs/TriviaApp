@@ -1,0 +1,198 @@
+body {
+	background-color: #00a0ff;
+	margin: 0;
+	font-family: Arial;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.trivia {
+	padding: 50px 0 0 0;
+	width: 340px;
+	margin: auto;
+}
+
+ul {margin: 0; padding: 0;}
+
+.question li.image {
+	list-style-type: none;
+	width: 340px;
+	height: 200px;
+	padding: 0;
+	margin: 0;
+	cursor: default;
+	box-shadow: 4px 5px 2px rgba(0,0,0,0.25);
+
+}
+
+.question li.title {
+	list-style-type: none;
+	cursor: pointer;
+	background-color: #fff;
+	padding: 10px 0 0 0;
+	height: 70px;
+	margin: 0;
+	text-align: left;
+	cursor: default;
+	box-shadow: 4px 4px 2px rgba(0,0,0,0.25);
+}
+
+.question li.title div {
+	margin: 0 15px;
+	line-height: 20px;
+	cursor: default;
+	font-size: 15px;
+	font-weight: bold;
+	
+}
+
+.question button.correct {
+    background-color: rgba(29,233,182,1);
+}
+.question button.correct:hover {
+    background-color: rgba(29,233,182,1);
+}
+
+.question button.wrong {
+    background-color: rgba(255,82,82,1);
+}
+.question button.wrong:hover {
+    background-color: rgba(255,82,82,1);
+}
+
+.question button {
+	box-shadow: 4px 4px 2px rgba(0,0,0,0.25);
+	width: 340px;
+	height: 50px;
+	cursor: pointer;
+	background-color: #fff;
+	text-align: center;
+	margin: 8px 0 0 0;
+	font-size: 15px;
+	font-weight: bold;	
+}
+
+.question button:hover {
+	background-color: #ccc;
+    -webkit-transition: background-color 100ms linear;
+    -moz-transition: background-color 100ms linear;
+    -o-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
+}
+
+.gameresults div h2 {
+	color: #fff;
+	margin: 0 0 8px 0;
+}
+
+.gameresults div {
+	border-bottom: 8px #ffec57 solid;
+	width: 55px;
+}
+
+.results {
+	margin: 24px 10px 40px 10px;
+    background-color: #ffec57;
+    width: 200px !important;
+    padding: 70px 35px 0px 35px;
+    height: 140px;
+    box-shadow: 4px 4px 2px rgba(0,0,0,0.25);
+}
+
+.results_w {
+	width: 50% !important;
+	float: left;
+}
+
+
+.results_w div {	
+	border-bottom: 8px solid #00a0ff;
+	margin: 0 auto 10px auto;
+}
+
+.results_w h4 {
+	text-align:center;
+	font-size: 8px;
+	font-weight: bold;
+}
+
+
+.results_w p {
+	text-align: center;
+    padding: 0 0 10px 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.results_c {
+	width: 50% !important;
+	float: left;
+	position: relative;
+	bottom: 18px;
+}
+
+
+.results_c div {	
+	border-bottom: 8px solid #00a0ff;
+	margin: 0 auto 10px auto;
+}
+
+.results_c h3 {
+	text-align:center;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+.results_c p {
+	text-align: center;
+    padding: 0 0 10px 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.playagain {
+	
+	width: 272px;
+	height: 50px;
+	cursor: pointer;
+	background-color: #fff;
+	text-align: center;
+	margin: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #00a0ff;
+	box-shadow: 3px 3px 2px rgba(0,0,0,0.25);
+}
+
+.playagain:hover {
+	background-color: #ccc;
+    -webkit-transition: background-color 100ms linear;
+    -moz-transition: background-color 100ms linear;
+    -o-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 45px;
+	background-color: #33afdd;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	padding: 20px 0 0 0;
+	color: #fff;
+}
+
+.yellowfooter {
+	background-color: #ffec57;
+	color: #000;
+}

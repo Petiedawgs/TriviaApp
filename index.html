@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trivia</title>
+    <script src="js/angular.js"></script>
+    <script src="js/app-trivia.js"></script>
+    <script src="js/angular-route.js"></script>
+    <link rel="stylesheet" href="css/template.css" type="text/css">
+</head>
+
+<body>
+    <div class="trivia" data-ng-app="app-trivia" data-ng-controller="ctrl-trivia">
+        <div class="question" data-ng-repeat="question in my_questions">
+            <div data-ng-if="question_index == $index">
+                <ul>
+                    <li class="image">
+                        <img src="{{question.graphicUrl}}" />
+                    </li>
+                    <li class="title">
+                        <div>{{question.title}}</div>
+                    </li>
+                </ul>
+                <button id="sel_option0" data-ng-click="f_nextquestion($event)" value="{{question.option0}}">{{question.option0}}</button>
+                <br>
+                <button id="sel_option1" data-ng-click="f_nextquestion($event)" value="{{question.option1}}">{{question.option1}}</button>
+                <br>
+                <button id="sel_option2" data-ng-click="f_nextquestion($event)" value="{{question.option2}}">{{question.option2}}</button>
+                <br>
+                <button id="sel_option3" data-ng-click="f_nextquestion($event)" value="{{question.option3}}">{{question.option3}}</button>
+                <br>
+                <!-- <span>{{my_questions.length}}</span> -->
+            </div>
+        </div>
+        <div class="gameresults" class="score" data-ng-if="question_index == my_questions.length">
+        	<div><h2>RESULTS</h2></div>
+            <div class="results">                
+                <div class="results_w">
+                    <div><p>{{my_wrong}}</p></div>
+                    
+                    <h4>INCORRECT</h4>                    
+                </div>
+                <div class="results_c">
+                    <div><p>{{my_correct}}</p></div>
+                    
+                    <h3>CORRECT</h3>                    
+                </div>                
+            </div>
+            <button class="playagain" data-ng-click="f_playagain()">Play Again</button>                       
+        </div>
+    </div>
+    <div id="footer">&copy; 2016 Peter Lilkendey<br>LilkendeyPeter@gmail.com</div>
+</body>
+
+</html>
